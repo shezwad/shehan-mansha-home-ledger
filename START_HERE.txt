@@ -1,6 +1,0 @@
-START HERE
-
-This is the complete Home Ledger package for a fresh setup.
-
-Open SETUP_HOME_LEDGER.md and follow each numbered part.
-Do not upload Home_Ledger.zip directly to GitHub. Unzip it and upload all files and folders inside Home_Ledger.
