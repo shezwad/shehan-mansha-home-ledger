@@ -169,21 +169,6 @@ function bindCloudEvents() {
     }
   });
 
-  $('#forgotPasswordButton').addEventListener('click', async () => {
-    const email = $('#authEmail').value.trim();
-    if (!email) {
-      setError($('#authError'), 'Enter your email first, then tap “Forgot password?”');
-      return;
-    }
-    try {
-      await sendPasswordResetEmail(auth, email);
-      setError($('#authError'));
-      window.HomeLedgerApp.showToast('Password-reset email sent');
-    } catch (error) {
-      setError($('#authError'), friendlyError(error));
-    }
-  });
-
   $('#createHouseholdForm').addEventListener('submit', createHousehold);
   $('#onboardingSignOutButton').addEventListener('click', () => signOut(auth));
   $('#signOutButton').addEventListener('click', () => signOut(auth));
