@@ -9,7 +9,6 @@ let browserLocalPersistence;
 let onAuthStateChanged;
 let signInWithEmailAndPassword;
 let signOut;
-let sendPasswordResetEmail;
 let initializeFirestore;
 let getFirestore;
 let persistentLocalCache;
@@ -125,7 +124,7 @@ async function initializeCloud() {
     ({ initializeApp } = appSdk);
     ({
       getAuth, setPersistence, browserLocalPersistence, onAuthStateChanged,
-      signInWithEmailAndPassword, signOut, sendPasswordResetEmail
+      signInWithEmailAndPassword, signOut
     } = authSdk);
     ({
       initializeFirestore, getFirestore, persistentLocalCache, persistentMultipleTabManager,
